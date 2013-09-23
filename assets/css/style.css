@@ -1,0 +1,258 @@
+body{
+  font-size:24px;
+  font-weight:900;
+}
+.expand{
+  padding: 0 10px;
+  margin-left:auto;margin-right:auto;
+  border-left: 1em solid black;
+  border-right: 1em solid black;
+  width: 4%;
+  height: 3.6em;
+  -webkit-animation: slideout .3s 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: slideout .3s 1s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: slideout .3s 1s;
+  -o-animation-fill-mode: forwards;
+  animation: slideout .3s 1s;
+  animation-fill-mode: forwards;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:flex;
+  overflow:hidden;
+}
+
+@-webkit-keyframes slideout {
+
+  0% {
+    width:4%;
+  }
+
+  to {
+    width: 84%;
+  }
+
+}
+
+@-o-keyframes slideout {
+
+  0% {
+    width:4%;
+  }
+
+  to {
+    width: 84%;
+  }
+
+}
+
+@-moz-keyframes slideout {
+
+  0% {
+    width:4%;
+  }
+
+  to {
+    width: 84%;
+  }
+
+}
+
+@keyframes slideout {
+
+  0% {
+    width:4%;
+  }
+
+  to {
+    width: 84%;
+  }
+
+}
+
+.expand h1{
+  text-overflow:clip;
+  display:block;
+  color:black;
+  opacity:0;
+  -webkit-animation: fadeintext 1s 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeintext 1s 1s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: fadeintext 1s 1s;
+  -o-animation-fill-mode: forwards;
+  animation: fadeintext 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+@-o-keyframes fadeintext{
+
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+
+}
+
+@-moz-keyframes fadeintext{
+
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+
+}
+
+@-webkit-keyframes fadeintext{
+
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+
+}
+
+@keyframes fadeintext{
+
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+
+}
+
+body{
+  font-family: "Helvetica Neue";
+}
+@media( max-width:480px ){
+
+  .inner{
+    margin: 2.0em auto;
+    font-size: 0.45em;
+    font-weight:900;
+  }
+
+  .smaller{
+    font-size: .8em;
+  }
+
+  p {
+    font-size:.7em;
+  }
+
+}
+
+@media( max-width:768px ) and ( min-width:481px){
+
+  .inner{
+    margin: -0.7em auto;
+    font-size: .8em;
+    font-weight: 700;
+  }
+
+  .smaller{
+    font-size: 1em;
+  }
+
+}
+@media( min-width:768px ){
+
+  .inner{
+    margin: -1.5em auto;
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
+}
+
+.center{
+  text-align:center;
+}
+
+.top-border{
+  padding-top:15px;
+  margin-top:15px;
+  border-top: 1px solid black;
+}
+
+.spacer15{
+  height:15px;
+  width: 100%;
+}
+
+.inline{
+  display:inline;
+}
+
+.center-image{
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.center-image img{
+  max-width:100%;
+  max-height:100%;
+}
+
+h2 a{
+  text-decoration: none;
+  color: #131313;
+}
+
+@media( min-width: 481px ){
+  .half-width{
+    width:78%;
+    margin-left:auto;margin-right:auto;
+  }
+
+}
+.half-width{
+  padding:15px;
+  padding-top:0px;
+}
+
+.black {
+  border-color:black;
+}
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+:w
+}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+

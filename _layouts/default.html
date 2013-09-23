@@ -1,208 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>css3 testing</title>
-  <meta name="viewport" content="width=device-width, user-scalable=false;">
-  <style type="text/css">
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section {
-      display: block;
-    }
-    body {
-      line-height: 1;
-    }
-    ol, ul {
-      list-style: none;
-    }
-    blockquote, q {
-      quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>azarbayejani - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="spacer15"></div>
+      <div class="expand">
+        <div class="inner center"><h1>AZARBAYEJANI</h1></div>
+      </div>
+      <div class="top-border">
+      </div>
 
 
-    body{
-      font-size:24px;
-      font-weight:900;
-    }
-    .expand{
-      padding: 0 0;
-      margin-left:auto;margin-right:auto;
-      border-left: 30px solid black;
-      border-right: 30px solid black;
-      width: 1%;
-      height: 90px;
-      -webkit-animation: slideout .3s 1s;
-      -webkit-animation-fill-mode: forwards;
-      display:-webkit-flex;
-      display:-moz-flex;
-      display:flex;
-      overflow:hidden;
-    }
-
-    @-webkit-keyframes slideout {
-
-      0% {
-        width:1%;
-      }
-
-      to {
-        width: 84%;
-      }
-
-    }
-
-    .expand h1{
-      text-overflow:clip;
-      display:block;
-      color:black;
-      opacity:0;
-      -webkit-animation: fadeintext 1s 1s;
-      -webkit-animation-fill-mode: forwards;
-    }
-
-    @-webkit-keyframes fadeintext{
-
-      from{
-        opacity:0;
-      }
-
-      to{
-        opacity:1;
-      }
-
-    }
-
-    body{
-      font-family: "Helvetica Neue";
-    }
-    @media( max-width:480px ){
-
-      .inner{
-        margin: .5em auto;
-        font-size: 1.8em;
-        font-weight:700;
-      }
-
-    }
-    @media( max-width:768px ) and ( min-width:480px){
-
-      .inner{
-        margin: .4em auto;
-        font-size: 2.1em;
-        font-weight: 900;
-      }
-
-    }
-    @media( min-width:768px ){
-
-      .inner{
-        margin: 0em auto;
-        font-size: 3.45em;
-        font-weight: 700;
-      }
-
-    }
-
-    .center{
-      text-align:center;
-    }
-
-    .top-border{
-      padding-top:15px;
-      margin-top:15px;
-      border-top: 1px solid black;
-    }
-
-    .spacer15{
-      height:15px;
-      width: 100%;
-    }
-
-    .inline{
-      display:inline;
-    }
-
-    .center-image{
-      width:90%;
-      margin-right:auto;
-      margin-left:auto;
-    }
-
-    .center-image img{
-      max-width:100%;
-      max-height:100%;
-    }
-
-    a{
-      text-decoration: none;
-      color: #131313;
-    }
-
-    @media( min-width: 480px ){
-    .half-width{
-      width:78%;
-      margin-left:auto;margin-right:auto;
-    }
-
-  }
-    .half-width{
-      padding:15px;
-      padding-top:0px;
-    }
-
-  </style>
-</head>
-<body>
-  <div class="spacer15"></div>
-  <div class="expand">
-    <div class="inner center"><h1>AZARBAYEJANI</h1></div>
-  </div>
-  <div class="top-border">
-  </div>
-
-  <div class="half-width">
-    <div class="center">
-      <h2 class="inline"><a href="#">HOME</a></h2>
-      |
-      <h2 class="inline"><a href="#">PROJECTS</a></h2>
-      |
-      <h2 class="inline"><a href="#">INFO</a></h2>
-      <hr/>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="center">
+            <h2 class="inline smaller"><a href="/">HOME</a> | </h2>
+            <h2 class="inline smaller"><a href="/media.html">MEDIA</a> | </h2>
+            <h2 class="inline smaller"><a href="/info.html">INFO</a></h2>
+          </div>
+          <hr class="black" />
+          {{ content }}
+        </div>
+      </div>
     </div>
-    <p>
-      {{ content }}
-    </p>
-  </div>
-
-</body>
+  </body>
 </html>
